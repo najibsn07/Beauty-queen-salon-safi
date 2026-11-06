@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <script>
+      (function () {
+        try {
+          var desc =
+            Object.getOwnPropertyDescriptor(window, 'fetch') ||
+            Object.getOwnPropertyDescriptor(Window.prototype, 'fetch');
+          if (desc && !desc.writable && !desc.set) {
+            var origFetch = window.fetch;
+            Object.defineProperty(window, 'fetch', {
+              configurable: true,
+              enumerable: true,
+              get: function () {
+                return origFetch;
+              },
+              set: function (v) {
+                if (typeof v === 'function') {
+                  origFetch = v;
+                }
+              },
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Queen Salon Safi | Women's Hairdresser &amp; Hair Styling</title>
+    <meta
+      name="description"
+      content="Discover Beauty Queen Salon Safi, your destination for women's haircuts, professional hair styling, coloring, and beauty services in Safi, Morocco. Contact us to book your appointment."
+    />
+    <meta
+      name="keywords"
+      content="Hairdresser in Safi, Women's hair salon Safi, Women's haircut Safi Morocco, Hair styling Safi, Beauty salon Safi, Salon de coiffure femme Safi, Coiffeuse à Safi"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Beauty Queen Salon Safi" />
+    <meta property="og:title" content="Beauty Queen Salon Safi | Women's Hairdresser &amp; Hair Styling" />
+    <meta
+      property="og:description"
+      content="Discover Beauty Queen Salon Safi, your destination for women's haircuts, professional hair styling, coloring, and beauty services in Safi, Morocco. Contact us to book your appointment."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Beauty Queen Salon Safi | Women's Hairdresser &amp; Hair Styling" />
+    <meta
+      name="twitter:description"
+      content="Discover Beauty Queen Salon Safi, your destination for women's haircuts, professional hair styling, coloring, and beauty services in Safi, Morocco."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Beauty Queen Salon Safi",
+        "description": "Women's hair salon in Safi, Morocco offering women's haircuts, hair styling, blow dry & brushing, hair coloring, hair treatments, and special occasion hairstyles.",
+        "telephone": "+212664400033",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2e étage, numéro 12, immeuble ZALAGH, Av. John Kennedy",
+          "addressLocality": "Safi",
+          "postalCode": "46000",
+          "addressCountry": "MA"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "10:00",
+            "closes": "20:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "bestRating": "5",
+          "reviewCount": "28"
+        },
+        "sameAs": [
+          "https://www.instagram.com/reel/DWU7OvyCB7D/?utm_source=ig_web_copy_link&obrf=NTc4MTIwNjQ2YQ=="
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-[#FFF9F5] text-[#2D1820] antialiased selection:bg-[#F8E5EA] selection:text-[#702F45]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

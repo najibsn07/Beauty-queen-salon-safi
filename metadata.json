@@ -1,0 +1,6 @@
+{
+  "name": "Beauty Queen Salon Safi",
+  "description": "Discover Beauty Queen Salon Safi, your destination for women's haircuts, professional hair styling, coloring, and beauty services in Safi, Morocco.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
